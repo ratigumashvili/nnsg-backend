@@ -26,25 +26,10 @@ export interface SharedCustomDate extends Struct.ComponentSchema {
   };
 }
 
-export interface SharedLegalDocs extends Struct.ComponentSchema {
-  collectionName: 'components_shared_legal_docs';
-  info: {
-    displayName: 'Legal docs';
-  };
-  attributes: {
-    date: Schema.Attribute.Component<'shared.custom-date', false>;
-    description: Schema.Attribute.Text;
-    docType: Schema.Attribute.String;
-    title: Schema.Attribute.String;
-    url: Schema.Attribute.String;
-  };
-}
-
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.custom-date': SharedCustomDate;
-      'shared.legal-docs': SharedLegalDocs;
     }
   }
 }

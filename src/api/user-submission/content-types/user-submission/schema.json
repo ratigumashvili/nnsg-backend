@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_submissions",
+  "info": {
+    "singularName": "user-submission",
+    "pluralName": "user-submissions",
+    "displayName": "O. User submission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "nnsgReference": {
+      "type": "string"
+    },
+    "dateOfDetection": {
+      "type": "string"
+    },
+    "placeName": {
+      "type": "string"
+    },
+    "coordinates": {
+      "type": "string"
+    },
+    "submissionAuthor": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

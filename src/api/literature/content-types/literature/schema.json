@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "literatures",
+  "info": {
+    "singularName": "literature",
+    "pluralName": "literatures",
+    "displayName": "L. Literature",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "PublishedPapers",
+        "PaperWithinConferenceProceedings",
+        "BookChapters",
+        "Books",
+        "BooksWithInstitutionalAuthor",
+        "PhDThesis"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "year": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

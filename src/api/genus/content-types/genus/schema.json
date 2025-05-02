@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "genuses",
+  "info": {
+    "singularName": "genus",
+    "pluralName": "genuses",
+    "displayName": "F. Genus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "name"
+    }
+  }
+}
