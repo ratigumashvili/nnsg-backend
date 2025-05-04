@@ -77,7 +77,6 @@ module.exports = {
         return { data: user };
     },
 
-
     async delete(ctx) {
         const { id } = ctx.params;
         const user = ctx.state.user;
