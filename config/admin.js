@@ -14,4 +14,10 @@ module.exports = ({ env }) => ({
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
   },
+  app: {
+    name: 'NNSG CMS',
+  },
+  settings: {
+    welcomeMessage: "Welcome to Non-Native Species og Georgia Platform!",
+  },
 });
